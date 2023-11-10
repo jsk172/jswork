@@ -22,3 +22,8 @@ delete animal[0];
 for(let i=0; i<animal.length; i++){
     document.write(animal[i] + " ");
 }
+document.write("<br>");
+//for in 문
+for(let i in animal){
+    document.write(animal + "<br>");
+}

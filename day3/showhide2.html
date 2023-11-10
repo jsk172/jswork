@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 보이기 및 숨기기</title>
+    <style>
+        button{
+            margin: 10px 2px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showhide()" id="button">숨기기</button>
+    <div>
+        <img src="images/flower.jpg" alt="꽃" id="pic">
+    </div>
+    <script>
+        // 버튼 토글(toggle)
+        let sw = true;
+        function showhide(){
+            let pic = document.getElementById("pic");
+            let button = document.getElementById("button");
+            if(sw){
+                pic.style.display = "none";
+                button.innerText = "보이기"
+                sw = false;
+            }else{
+                pic.style.display = "block";
+                button.innerText = "숨기기"
+                sw = true;
+            }
+        }
+    </script>
+</body>
+</html>

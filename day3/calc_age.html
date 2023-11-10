@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이계산 프로그램</title>
+    <style>
+        #wrap{
+            width: 800px; margin: 0 auto;
+            text-align: center;
+        }
+        #wrap .button{
+            padding: 10px;
+            font-size: 18px;
+        }
+        p{
+            color: green;
+            padding-top: 30px; 
+            line-height: 2px;
+            font-size: 18px;
+        }
+        #print, #print2{
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>나이를 계산하는 프로그램</h2>
+        <button onclick="calcAge()" class="button">계산하기</button>
+        <hr>
+        <p id="print"></p>
+        <p id="print2"></p>
+    </div>
+        <script src="js/calc-age.js"></script>
+</body>
+</html>
