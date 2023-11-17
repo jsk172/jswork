@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // json(javascript objct notation) - 자바스크립트 객체
+        /*
+        let 객체이름 = {
+            속성 이름 : 속성값,
+            속석 이름 : 속성값
+        }
+        */
+
+        let person = {
+            name : "홍길동",
+            age : 38,
+            blood : "A",
+            isMarried : true,
+
+            play: function(){ //객체의 함수사용
+                alert("홈런을 친다!")
+            }
+        }
+        console.log(person.name);
+        document.write(person.blood + "<br>");
+        document.write("결혼유무 : " +person.isMarried + "<br>");
+        person.play();
+    </script>
+</body>
+</html>

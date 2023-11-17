@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p511 quiz</title>
+    <style>
+        h1{text-align: center;}
+        span{
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>3의 배수 찾기</h1>
+
+    <script>
+        let num = prompt("몇 까지 3의 배수를 찾을까요?");
+        let count = 0;
+
+        if(num == null){
+            document.write("입력취소.");
+        }else if(isNaN(num)){
+            document.write("숫자를 입력해주세요.");
+        }else{
+            num = parseInt(num); //입력받은 문자를 숫자로 변환
+            
+            for(let i=1; i<=num; i++){
+                if(i%3 == 0){
+                    document.write(i + ", ");
+                    count++;
+                }
+            }
+            document.write("<br><span>" + num + "까지의 3의 배수의 개수는 : " + count + "</span>");
+        }
+
+        
+    </script>
+</body>
+</html>
