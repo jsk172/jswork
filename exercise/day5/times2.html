@@ -26,14 +26,18 @@
             document.write("숫자를 입력해주세요.");
         }else{
             num = parseInt(num); //입력받은 문자를 숫자로 변환
-            
+            let num2 = []; // 배수를 저장할 빈 배열 선언
+
             for(let i=1; i<=num; i++){
                 if(i%3 == 0){
-                    document.write(i + ", ");
+                    num2.push(i);
                     count++;
                 }
             }
-            document.write("<br><span>" + num + "까지의 3의 배수의 개수는 : " + count + "</span>");
+            console.log(num2);
+
+            // document.getElementById("show").innerHTML = num2;
+            document.write("<br><span>" + num2 + "까지의 3의 배수의 개수는 : " + count + "</span>");
         }
 
         
